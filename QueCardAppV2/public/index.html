@@ -24,7 +24,7 @@
         <div class="row mb-3 text-center">
             <h1><span class="badge bg-dark">Fill in Que Card:</span></h1>
         </div>
-        <div class="row">
+        <div class="row mb-3">
             <div class="col-8 mx-auto mb-3">
                 <div class="input-group">
                     <span class="input-group-text fw-bold" id="question-label">Question:</span>
@@ -39,6 +39,22 @@
             </div>
             <div class="col-8 mx-auto text-center">
                 <button type="button" class="btn btn-lg btn-dark" id="submit">Submit</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8 mx-auto">
+                <div class="accordion" id="queCards">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#cardsView" aria-expanded="false" aria-controls="cardsView">
+                                View Que Cards
+                            </button>
+                        </h2>
+                        <div id="cardsView" class="accordion-collapse collapse" aria-labelledby="heading" data-bs-parent="#queCards">
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
